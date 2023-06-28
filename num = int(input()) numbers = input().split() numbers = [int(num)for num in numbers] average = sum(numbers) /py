@@ -1,0 +1,9 @@
+num = int(input())
+numbers = input().split()
+numbers = [int(num)for num in numbers]
+average = sum(numbers) / num
+rounded_average = round(average)
+floored_average = int(average)
+print(average)
+print(rounded_average)
+print(floored_average)

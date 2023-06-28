@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+class Programm {
+    static void Main(string[] args) { 
+        Console.WriteLine("Введите число");
+        int a = Convert.ToInt32(Console.ReadLine());
+        List<int> list = new List<int>();
+
+        float sum = 0;
+
+        for(int i =1; i <=a; i++)
+        {
+            Console.WriteLine($"Введите число {i}");
+            int n = Convert.ToInt32(Console.ReadLine());
+            list.Add(n);
+            sum += n;
+
+        }
+
+        Console.WriteLine(sum);
+        Console.WriteLine(sum / a);
+        Console.WriteLine(Math.Round(sum / a));
+        Console.WriteLine(Math.Floor(sum / a));
+
+    }
+}
